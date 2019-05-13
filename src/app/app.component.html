@@ -1,0 +1,9 @@
+<p-orderList #list (onReorder)="orderChange($event)" dragdrop="true" controlsPosition="right" header="Guide Coffe Queue"
+  [listStyle]="{'height':'600px'}" [value]="usersObservable | async">
+  <ng-template let-user pTemplate="item">
+    <div class="ui-helper-clearfix">
+      <div style="font-size:16px;margin:15px 5px 0 0">Nome: {{user.name}} </div>
+      <div style="font-size:16px;margin:15px 5px 0 0">Data Admissão:{{user.date}}</div>
+    </div>
+  </ng-template>
+</p-orderList>

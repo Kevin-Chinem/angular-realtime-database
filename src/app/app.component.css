@@ -1,0 +1,4 @@
+:host >>> .ui-orderlist-item {
+  border-style: solid !important;
+  border-width: 2px !important;
+}

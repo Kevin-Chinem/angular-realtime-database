@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import {ButtonModule} from 'primeng/button';
 
 var env = {
   apiKey: 'AIzaSyBuX3Oa09Kb4b3O3XxbOGnrUSxs8tMiNDw',
@@ -25,7 +26,8 @@ var env = {
     AngularFireDatabaseModule,
     BrowserModule,
     BrowserAnimationsModule,
-    OrderListModule
+    OrderListModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

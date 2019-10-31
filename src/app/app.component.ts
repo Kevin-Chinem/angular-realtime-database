@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     this.usersObservable = this.db.list('/users').valueChanges();
   }
 
-  orderChange(event) {
+  save(event) {
     this.db.database.ref('/users').set(this.list.value);
   }
 }
